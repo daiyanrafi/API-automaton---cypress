@@ -54,7 +54,7 @@ describe(' POST CALL In Cypress', () => {
 
             }).then((res) => {
                 expect(res.status).to.equal(201)
-                expect(res.body).has.property("name", "AB Test 01")
+                expect(res.body).has.property("name", "Rafi GG 01")
                 expect(res.body).has.property("gender", "female")
                 expect(res.body).has.property("status", "active")
                 expect(res.body.id).to.not.be.null
@@ -81,7 +81,7 @@ describe(' POST CALL In Cypress', () => {
 
         }).then((res) => {
             expect(res.status).to.equal(201)
-            expect(res.body).has.property("name", "AB Test 01")
+            expect(res.body).has.property("name", "Rafi GG 01")
             expect(res.body).has.property("gender", "female")
             expect(res.body).has.property("status", "active")
             expect(res.body.id).to.not.be.null
@@ -100,7 +100,7 @@ describe(' POST CALL In Cypress', () => {
             })
                 .then((res) => {
                     expect(res.status).to.be.equal(200)
-                    expect(res.body).has.property("name", "AB Test 01")
+                    expect(res.body).has.property("name", "Rafi GG 01")
                     expect(res.body).has.property("gender", "female")
                     expect(res.body).has.property("status", "active")
                     expect(res.body.id).to.not.be.null
