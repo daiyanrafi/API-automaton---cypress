@@ -148,7 +148,7 @@ describe(' POST CALL In Cypress', () => {
     })
 
     it(' POST CALL - Negative Case with Duplicate Data ', () => {
-        payload.email = "abtest01@dispostable.com"
+        payload.email = "abc123@gmail.com"
         cy.request({
             method: 'POST',
             url: 'https://gorest.co.in/public/v2/users',
