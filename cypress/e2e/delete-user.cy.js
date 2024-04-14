@@ -25,7 +25,6 @@ describe(' Delete API Automation In Cypress', () => {
         }).then((res) => {
             const userId = res.body.id
 
-
             cy.request({
                 method: 'DELETE',
                 url: 'https://gorest.co.in/public/v2/users/' + userId,
@@ -49,10 +48,5 @@ describe(' Delete API Automation In Cypress', () => {
                 expect(res.status).to.be.equal(404)
             })
         })
-
-
     })
-
-
-
 })
