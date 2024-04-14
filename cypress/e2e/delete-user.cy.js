@@ -11,7 +11,7 @@ describe(' Delete API Automation In Cypress', () => {
         let payload = {
             "name": "Rafi GG",
             "email": emailAddress,
-            "gender": "female",
+            "gender": "male",
             "status": "active"
         }
 
