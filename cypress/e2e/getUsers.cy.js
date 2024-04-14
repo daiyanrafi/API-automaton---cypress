@@ -1,6 +1,6 @@
 describe('API automation', () => {
 
-    //POSITIVE TESTING
+    //POSITIVE TESTING++++++++++++++
     it('GET users', () => {
 
         cy.request({
@@ -32,7 +32,7 @@ describe('API automation', () => {
             })
     })
     
-    //NEGATIVE TESTING
+    //NEGATIVE TESTING++++++++++++++++++++++
     it('Invalid GET Users', () => {
 
         cy.request({
