@@ -23,3 +23,57 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add('getAPI', (pathParam) => {
+
+    cy.request({
+        method: 'GET',
+        url: '/' + pathParam,
+        headers: {
+
+            Authorization: 'Bearer 6f3837e06786e898121d9c4abf9f79485ee813abce205304f9aa69a5e3356d9e'
+        }
+    })
+
+
+})
+
+Cypress.Commands.add('postAPI', (payload) => {
+
+    cy.request({
+        method: 'POST',
+        url: '/',
+        headers: {
+
+            Authorization: 'Bearer 6f3837e06786e898121d9c4abf9f79485ee813abce205304f9aa69a5e3356d9e'
+        },
+        body: payload
+
+    })
+})
+
+Cypress.Commands.add('putAPI', (pathParam) => {
+
+    cy.request({
+        method: 'PUT',
+        url: '/' + pathParam,
+        headers: {
+
+            Authorization: 'Bearer 6f3837e06786e898121d9c4abf9f79485ee813abce205304f9aa69a5e3356d9e'
+        },
+    })
+
+})
+
+Cypress.Commands.add('deleteAPI', (pathParam) => {
+    cy.request({
+        method: 'DELETE',
+        url: '/' + pathParam,
+        headers: {
+
+            Authorization: 'Bearer 6f3837e06786e898121d9c4abf9f79485ee813abce205304f9aa69a5e3356d9e'
+        },
+
+    })
+})
